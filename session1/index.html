@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>JS 1</title>
+
+    <script>
+
+    /* console.log("hello world");
+
+             function displayTextBox() {
+
+                 window.alert("monalerte");
+
+            }
+
+            displayTextBox();
+
+
+
+            function direBonjour(aQui) {
+
+                window.alert("Bonjour" + aQui);
+
+                          //  }
+
+            
+
+           function direCoucou (a , b) {
+
+               //  window.alert("Coucou" + a);
+
+            }
+
+            direCoucou("toi", "?");
+
+        
+
+        function SurUneLigne(mess1, mess2) {
+
+          console.log("Bonjour" + aQui);
+
+            }
+
+            direBonjour("Maman");
+
+            direBonjour("patron");
+
+        SurUneLigne("coucou", "ça va?");  */
+
+       
+
+        function MaMu(nb1, nb2) {
+
+            
+
+         var resultat = nb1 * nb2;
+
+            // console.log("resultat");
+
+            // console.log(resultat);
+
+            if (isNaN(resultat)) {
+
+                alert("Une erreur de calcul est survenue ... :(");
+
+            }
+
+            return resultat; 
+
+        }
+
+        
+
+               
+
+        function start() {
+
+            var res;
+
+            //res=MaMu(2, 2);
+
+            // console.log(res);
+
+            // afficherResultat(2, 3);
+
+            // res=MaMu(2, "toto");
+
+          //  console.log(res);
+
+            // afficherResultat(res);
+
+            afficherResultat(calculPrixTTC(100))
+
+        }
+
+          function afficherResultat(res) {
+
+              var cible = document.getElementById("res");
+
+              cible.innerHTML += '<br>' + res ; 
+
+          }
+
+        
+
+        
+
+        // prix TTC
+
+        
+
+        function calculPrixTTC(prix){
+
+            var taux= 1 + (7 / 100 )
+
+            console.log(taux);
+
+           return MaMu(prix, taux)
+
+        }
+
+        
+
+        
+
+        
+
+    </script>
+
+</head>
+
+<body onload="start()">
+
+    <style>
+
+    body {
+
+    background: cadetblue;
+
+        }
+
+        
+
+    </style>
+
+    <div id="res">Résultat de l'opération ... </div>
+
+    
+
+</body>
+
+</html>

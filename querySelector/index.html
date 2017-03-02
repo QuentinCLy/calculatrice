@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    
+        var app = function app() {
+      "use strict";
+        var titre, parags;
+        window.onload = function start() {
+            var i;
+            titre = document.getElementById("title_main");
+            //console.log(titre);
+            parags = document.querySelectorAll(".text");
+            console.log(typeof parags);
+            
+            for (i = 0, i < parags.length; += 1){
+            console.log(parags[i]);
+            console.log(parags.[i]textContent)
+                
+            }
+        };
+        
+    };
+    </script>
+</head>
+<body>
+    <h1 id="title_main" class="title">hello</h1>
+    
+    <p class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nihil debitis consequatur dolorem molestiae accusantium maxime officia nostrum optio odio? Optio vero dignissimos dolorum quis facere mollitia veniam, voluptates unde?</p>
+    
+    
+    <input  type="text" id="saisie" class="input">
+    
+       <ul class="list">
+    <li class="item">a</li>
+    <li class="item">b</li>
+    <li class="item">c</li>
+       </ul>
+       
+       <p class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quia, corporis blanditiis molestias consectetur saepe quibusdam sit provident! Quisquam magni labore reprehenderit quae excepturi, ab fugit praesentium nesciunt sunt magnam!</p>
+
+</body>
+</html>
